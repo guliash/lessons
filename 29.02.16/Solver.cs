@@ -79,7 +79,7 @@ namespace CF {
             for(int i = l + 1; i <= r; i++) {
                 int key = a[i];
                 int j = i - 1;
-                while(j >= 0 && a[j] > key) {
+                while(j >= l && a[j] > key) {
                     Swap(a, j, j + 1);
                     --j;
                 }
